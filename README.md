@@ -128,13 +128,6 @@ CSV (sample):
 
         suspicious_stats.png — shows count of suspicious events (Brute Force / DoS).
 
-🛡 Safety & Privacy (must read)
-
-    Never commit actual captured_traffic.csv containing real credentials. Use captured_traffic_sample.csv for examples.
-
-    Only sniff networks you own or where you have explicit permission.
-
-    For submission, store recordings and reports on Google Drive and set sharing to “Anyone with the link” (as required by Deltaware).
 
 🧩 How It Works (brief technical notes)
 
@@ -144,7 +137,7 @@ CSV (sample):
 
     Credential extraction: The script looks for HTTP POST payloads and extracts fields like username, user, email, password, pass, pwd using regex.
 
-    Sliding windows: Per-IP deque of timestamps is used to detect N events within T seconds for brute-force and DoS detection to avoid cumulative false positives.
+    suspicious pattern: DOS & Brute Force
 
     Logging: Each relevant packet is appended to a CSV with timestamp, IPs, port, encryption label, credentials (if found), and suspicious notes.
 
