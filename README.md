@@ -27,7 +27,7 @@ It captures TCP traffic, classifies sessions as **Encrypted ✅**, **Plaintext �
 
 ---
 
-## 🗂 Repository Structure (recommended)
+## 🗂 Repository Structure
 
 Stealthy-Sniffer/
 ├── sniff.py # Main sniffer (sliding-window detection)
